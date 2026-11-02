@@ -25,4 +25,4 @@ INSERT ALL
 SELECT 1 FROM dual;
 
 COMMIT;
-PROMPT Sample data inserted successfully.
+
