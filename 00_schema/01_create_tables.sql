@@ -1,5 +1,4 @@
--- Student Registration and Grading System
--- Run this file while connected to your assignment schema in PRACTICEPDB.
+
 
 SET SERVEROUTPUT ON
 
@@ -51,4 +50,3 @@ CREATE TABLE a4_enrollments (
     CONSTRAINT pk_a4_enrollments PRIMARY KEY (student_id, course_id, semester)
 );
 
-PROMPT Tables created successfully.
