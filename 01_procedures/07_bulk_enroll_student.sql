@@ -16,12 +16,12 @@ BEGIN
         RAISE_APPLICATION_ERROR(-20030, 'Student ' || p_student_id || ' does not exist.');
     END IF;
 
-    -- BULK COLLECT retrieves all course IDs in one operation into an associative array.
+ 
     SELECT course_id BULK COLLECT INTO v_course_ids
     FROM a4_courses
     ORDER BY course_id;
 
-    -- FORALL sends the inserts as one bulk operation instead of a row-by-row loop.
+    
     FORALL i IN INDICES OF v_course_ids SAVE EXCEPTIONS
         INSERT INTO a4_enrollments (student_id, course_id, semester, score)
         VALUES (p_student_id, v_course_ids(i), p_semester, NULL);
