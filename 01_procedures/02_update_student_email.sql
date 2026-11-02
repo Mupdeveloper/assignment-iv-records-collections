@@ -4,7 +4,7 @@ CREATE OR REPLACE PROCEDURE update_student_email (
 ) AS
     v_student a4_students%ROWTYPE;
 BEGIN
-    -- %ROWTYPE creates one record holding every a4_students column.
+    
     SELECT * INTO v_student
     FROM a4_students
     WHERE student_id = p_student_id;
