@@ -1,6 +1,6 @@
 # Assignment IV: Records and Collections in Oracle PL/SQL
 
-** Names:** 1. Mukunzi Prince  **Registration number:** 20252IMA128  
+Names: 1. Mukunzi Prince  **Registration number:** 20252IMA128  
             2.NDAYISHIMIYE Andy Caleb 29554 **Registration number:**  29554
 
 **Group:** B 
